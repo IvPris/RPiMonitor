@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:padding="5dip"
+            android:layout_margin="0.5dip"
+            android:layout_span="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CPU"
+            android:gravity="center"
+            android:background="#173f59"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:padding="5dip"
+            android:text="USAGE"
+            android:gravity="start"
+            android:layout_margin="0.5dip"
+            android:textStyle="bold"
+            android:background="#42adf4"/>
+
+        <TextView
+            android:id="@+id/cpu"
+            android:gravity="end"
+            android:padding="5dip" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:padding="5dip"
+            android:layout_margin="0.5dip"
+            android:layout_span="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MEMORY"
+            android:gravity="center"
+            android:background="#173f59"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:padding="5dip"
+            android:text="FREE"
+            android:layout_margin="0.5dip"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:background="#42adf4"/>
+
+        <TextView
+            android:id="@+id/mem_free"
+            android:gravity="end"
+            android:padding="5dip" />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:padding="5dip"
+            android:text="USED"
+            android:layout_margin="0.5dip"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:background="#42adf4"/>
+
+        <TextView
+            android:id="@+id/mem_used"
+            android:gravity="end"
+            android:padding="5dip" />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:padding="5dip"
+            android:text="TOTAL"
+            android:layout_margin="0.5dip"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:background="#42adf4"/>
+
+        <TextView
+            android:id="@+id/mem_total"
+            android:gravity="end"
+            android:padding="5dip" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:padding="5dip"
+            android:text="%"
+            android:gravity="start"
+            android:layout_margin="0.5dip"
+            android:textStyle="bold"
+            android:background="#42adf4"/>
+
+        <TextView
+            android:id="@+id/mem_percent"
+            android:gravity="end"
+            android:padding="5dip" />
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:padding="5dip"
+            android:layout_margin="0.5dip"
+            android:layout_span="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HDD"
+            android:gravity="center"
+            android:background="#173f59"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:padding="5dip"
+            android:text="FREE"
+            android:gravity="start"
+            android:layout_margin="0.5dip"
+            android:textStyle="bold"
+            android:background="#42adf4"/>
+
+        <TextView
+            android:id="@+id/hdd_free"
+            android:gravity="end"
+            android:padding="5dip" />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:padding="5dip"
+            android:text="USED"
+            android:gravity="start"
+            android:layout_margin="0.5dip"
+            android:textStyle="bold"
+            android:background="#42adf4"/>
+
+        <TextView
+            android:id="@+id/hdd_used"
+            android:gravity="end"
+            android:padding="5dip" />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:padding="5dip"
+            android:text="TOTAL"
+            android:gravity="start"
+            android:layout_margin="0.5dip"
+            android:textStyle="bold"
+            android:background="#42adf4"/>
+
+        <TextView
+            android:id="@+id/hdd_total"
+            android:gravity="end"
+            android:padding="5dip" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:padding="5dip"
+            android:text="%"
+            android:gravity="start"
+            android:layout_margin="0.5dip"
+            android:textStyle="bold"
+            android:background="#42adf4"/>
+
+        <TextView
+            android:id="@+id/hdd_percent"
+            android:gravity="end"
+            android:padding="5dip" />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dip"
+            android:layout_span="3"
+            android:background="#173f59"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="NETWORK"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:padding="5dip"
+            android:text="RECEIVED"
+            android:gravity="start"
+            android:layout_margin="0.5dip"
+            android:textStyle="bold"
+            android:background="#42adf4"/>
+
+        <TextView
+            android:id="@+id/network_tx"
+            android:gravity="end"
+            android:padding="5dip" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:padding="5dip"
+            android:text="TRANSMITTED"
+            android:gravity="start"
+            android:layout_margin="0.5dip"
+            android:textStyle="bold"
+            android:background="#42adf4"/>
+
+        <TextView
+            android:id="@+id/network_rx"
+            android:gravity="end"
+            android:padding="5dip" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/refresh"
+            android:padding="5dip"
+            android:layout_margin="3dip"
+            android:layout_span="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REFRESH"
+            android:gravity="center"
+            android:background="#5d5d60"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            />
+    </TableRow>
+</TableLayout>
