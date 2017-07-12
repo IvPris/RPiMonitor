@@ -19,7 +19,7 @@
             android:layout_span="3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CPU"
+            android:text="@string/cpu"
             android:gravity="center"
             android:background="#173f59"
             android:textStyle="bold"
@@ -34,7 +34,7 @@
 
         <TextView
             android:padding="5dip"
-            android:text="USAGE"
+            android:text="@string/usage"
             android:gravity="start"
             android:layout_margin="0.5dip"
             android:textStyle="bold"
@@ -57,7 +57,7 @@
             android:layout_span="3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="MEMORY"
+            android:text="@string/memory"
             android:gravity="center"
             android:background="#173f59"
             android:textStyle="bold"
@@ -71,7 +71,7 @@
 
         <TextView
             android:padding="5dip"
-            android:text="FREE"
+            android:text="@string/free"
             android:layout_margin="0.5dip"
             android:textStyle="bold"
             android:gravity="start"
@@ -89,7 +89,7 @@
 
         <TextView
             android:padding="5dip"
-            android:text="USED"
+            android:text="@string/used"
             android:layout_margin="0.5dip"
             android:textStyle="bold"
             android:gravity="start"
@@ -107,7 +107,7 @@
 
         <TextView
             android:padding="5dip"
-            android:text="TOTAL"
+            android:text="@string/total"
             android:layout_margin="0.5dip"
             android:textStyle="bold"
             android:gravity="start"
@@ -126,7 +126,7 @@
 
         <TextView
             android:padding="5dip"
-            android:text="%"
+            android:text="@string/percent"
             android:gravity="start"
             android:layout_margin="0.5dip"
             android:textStyle="bold"
@@ -151,7 +151,7 @@
             android:layout_span="3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="HDD"
+            android:text="@string/hdd"
             android:gravity="center"
             android:background="#173f59"
             android:textStyle="bold"
@@ -166,7 +166,7 @@
 
         <TextView
             android:padding="5dip"
-            android:text="FREE"
+            android:text="@string/free"
             android:gravity="start"
             android:layout_margin="0.5dip"
             android:textStyle="bold"
@@ -184,7 +184,7 @@
 
         <TextView
             android:padding="5dip"
-            android:text="USED"
+            android:text="@string/used"
             android:gravity="start"
             android:layout_margin="0.5dip"
             android:textStyle="bold"
@@ -202,7 +202,7 @@
 
         <TextView
             android:padding="5dip"
-            android:text="TOTAL"
+            android:text="@string/total"
             android:gravity="start"
             android:layout_margin="0.5dip"
             android:textStyle="bold"
@@ -221,7 +221,7 @@
 
         <TextView
             android:padding="5dip"
-            android:text="%"
+            android:text="@string/percent"
             android:gravity="start"
             android:layout_margin="0.5dip"
             android:textStyle="bold"
@@ -245,7 +245,7 @@
             android:background="#173f59"
             android:gravity="center"
             android:padding="5dip"
-            android:text="NETWORK"
+            android:text="@string/network"
             android:textColor="#ffffff"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -257,7 +257,7 @@
 
         <TextView
             android:padding="5dip"
-            android:text="RECEIVED"
+            android:text="@string/received"
             android:gravity="start"
             android:layout_margin="0.5dip"
             android:textStyle="bold"
@@ -274,7 +274,7 @@
 
         <TextView
             android:padding="5dip"
-            android:text="TRANSMITTED"
+            android:text="@string/transmitted"
             android:gravity="start"
             android:layout_margin="0.5dip"
             android:textStyle="bold"
@@ -296,7 +296,7 @@
             android:layout_span="3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="REFRESH"
+            android:text="@string/refresh"
             android:gravity="center"
             android:background="#5d5d60"
             android:textStyle="bold"
