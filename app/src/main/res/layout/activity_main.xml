@@ -4,28 +4,25 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:stretchColumns="1"
-    android:layout_marginRight="10dp"
     android:layout_marginLeft="10dp"
-    >
+    android:layout_marginRight="10dp"
+    android:stretchColumns="*">
 
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
-            android:padding="5dip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_margin="0.5dip"
             android:layout_span="3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/cpu"
-            android:gravity="center"
             android:background="#173f59"
-            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="@string/cpu"
             android:textColor="#ffffff"
-            android:textSize="20sp"
-            />
+            android:textStyle="bold" />
     </TableRow>
 
     <TableRow
@@ -33,17 +30,19 @@
         android:layout_height="match_parent">
 
         <TextView
+            android:layout_margin="0.5dip"
+            android:background="#42adf4"
+            android:gravity="start"
             android:padding="5dip"
             android:text="@string/usage"
-            android:gravity="start"
-            android:layout_margin="0.5dip"
-            android:textStyle="bold"
-            android:background="#42adf4"/>
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/cpu"
             android:gravity="end"
-            android:padding="5dip" />
+            android:padding="5dip"
+            android:textColor="#000000" />
     </TableRow>
 
 
@@ -52,71 +51,84 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:padding="5dip"
-            android:layout_margin="0.5dip"
-            android:layout_span="3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/memory"
-            android:gravity="center"
+            android:layout_margin="0.5dip"
+            android:layout_span="3"
             android:background="#173f59"
-            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="@string/memory"
             android:textColor="#ffffff"
-            android:textSize="20sp"
-            />
+            android:textStyle="bold" />
     </TableRow>
+
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
-            android:padding="5dip"
-            android:text="@string/free"
             android:layout_margin="0.5dip"
-            android:textStyle="bold"
+            android:background="#42adf4"
             android:gravity="start"
-            android:background="#42adf4"/>
+            android:padding="5dip"
+
+            android:text="@string/free"
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/mem_free"
             android:gravity="end"
-            android:padding="5dip" />
+            android:padding="5dip"
+
+            android:textColor="#000000" />
 
     </TableRow>
+
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
-            android:padding="5dip"
-            android:text="@string/used"
             android:layout_margin="0.5dip"
-            android:textStyle="bold"
+            android:background="#42adf4"
             android:gravity="start"
-            android:background="#42adf4"/>
+            android:padding="5dip"
+
+            android:text="@string/used"
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/mem_used"
             android:gravity="end"
-            android:padding="5dip" />
+            android:padding="5dip"
+
+            android:textColor="#000000" />
 
     </TableRow>
+
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
+            android:layout_margin="0.5dip"
+            android:background="#42adf4"
+            android:gravity="start"
             android:padding="5dip"
             android:text="@string/total"
-            android:layout_margin="0.5dip"
-            android:textStyle="bold"
-            android:gravity="start"
-            android:background="#42adf4"/>
+
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/mem_total"
             android:gravity="end"
-            android:padding="5dip" />
+            android:padding="5dip"
+
+            android:textColor="#000000" />
 
     </TableRow>
 
@@ -125,20 +137,23 @@
         android:layout_height="match_parent">
 
         <TextView
+            android:id="@+id/textView2"
+            android:layout_margin="0.5dip"
+            android:background="#42adf4"
+            android:gravity="start"
             android:padding="5dip"
             android:text="@string/percent"
-            android:gravity="start"
-            android:layout_margin="0.5dip"
-            android:textStyle="bold"
-            android:background="#42adf4"/>
+
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/mem_percent"
             android:gravity="end"
-            android:padding="5dip" />
+            android:padding="5dip"
+
+            android:textColor="#000000" />
     </TableRow>
-
-
 
 
     <TableRow
@@ -146,17 +161,17 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:padding="5dip"
-            android:layout_margin="0.5dip"
-            android:layout_span="3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/hdd"
-            android:gravity="center"
+            android:layout_margin="0.5dip"
+            android:layout_span="3"
             android:background="#173f59"
-            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="@string/hdd"
             android:textColor="#ffffff"
-            android:textSize="20sp"
+            android:textStyle="bold"
+
             />
     </TableRow>
 
@@ -165,53 +180,67 @@
         android:layout_height="match_parent">
 
         <TextView
+            android:layout_margin="0.5dip"
+            android:background="#42adf4"
+            android:gravity="start"
             android:padding="5dip"
             android:text="@string/free"
-            android:gravity="start"
-            android:layout_margin="0.5dip"
-            android:textStyle="bold"
-            android:background="#42adf4"/>
+
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/hdd_free"
             android:gravity="end"
-            android:padding="5dip" />
+            android:padding="5dip"
+
+            android:textColor="#000000" />
 
     </TableRow>
+
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
+            android:layout_margin="0.5dip"
+            android:background="#42adf4"
+            android:gravity="start"
             android:padding="5dip"
             android:text="@string/used"
-            android:gravity="start"
-            android:layout_margin="0.5dip"
-            android:textStyle="bold"
-            android:background="#42adf4"/>
+
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/hdd_used"
             android:gravity="end"
-            android:padding="5dip" />
+            android:padding="5dip"
+
+            android:textColor="#000000" />
 
     </TableRow>
+
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
+            android:layout_margin="0.5dip"
+            android:background="#42adf4"
+            android:gravity="start"
             android:padding="5dip"
             android:text="@string/total"
-            android:gravity="start"
-            android:layout_margin="0.5dip"
-            android:textStyle="bold"
-            android:background="#42adf4"/>
+
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/hdd_total"
             android:gravity="end"
-            android:padding="5dip" />
+            android:padding="5dip"
+
+            android:textColor="#000000" />
 
     </TableRow>
 
@@ -220,19 +249,24 @@
         android:layout_height="match_parent">
 
         <TextView
+            android:layout_margin="0.5dip"
+            android:background="#42adf4"
+            android:gravity="start"
             android:padding="5dip"
             android:text="@string/percent"
-            android:gravity="start"
-            android:layout_margin="0.5dip"
-            android:textStyle="bold"
-            android:background="#42adf4"/>
+
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/hdd_percent"
             android:gravity="end"
-            android:padding="5dip" />
+
+            android:padding="5dip"
+            android:textColor="#000000" />
 
     </TableRow>
+
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -247,7 +281,6 @@
             android:padding="5dip"
             android:text="@string/network"
             android:textColor="#ffffff"
-            android:textSize="20sp"
             android:textStyle="bold" />
     </TableRow>
 
@@ -256,52 +289,75 @@
         android:layout_height="match_parent">
 
         <TextView
+            android:layout_margin="0.5dip"
+            android:background="#42adf4"
+            android:gravity="start"
             android:padding="5dip"
             android:text="@string/received"
-            android:gravity="start"
-            android:layout_margin="0.5dip"
-            android:textStyle="bold"
-            android:background="#42adf4"/>
+            android:textColor="#000000"
+
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/network_tx"
             android:gravity="end"
-            android:padding="5dip" />
+            android:padding="5dip"
+
+            android:textColor="#000000" />
     </TableRow>
+
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
-            android:padding="5dip"
-            android:text="@string/transmitted"
-            android:gravity="start"
+            android:id="@+id/textView"
             android:layout_margin="0.5dip"
-            android:textStyle="bold"
-            android:background="#42adf4"/>
+            android:background="#42adf4"
+            android:gravity="start"
+            android:padding="5dip"
+
+            android:text="@string/transmitted"
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/network_rx"
             android:gravity="end"
-            android:padding="5dip" />
+            android:padding="5dip"
+
+            android:textColor="#000000" />
     </TableRow>
+
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <Button
             android:id="@+id/refresh"
-            android:padding="5dip"
-            android:layout_margin="3dip"
-            android:layout_span="3"
-            android:layout_width="match_parent"
+
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/refresh"
+            android:layout_margin="3dip"
+            android:backgroundTint="#92cde2"
             android:gravity="center"
-            android:background="#5d5d60"
-            android:textStyle="bold"
-            android:textColor="#ffffff"
-            android:textSize="20sp"
-            />
+            android:padding="5dip"
+            android:text="@string/refresh"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/shutdown"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dip"
+            android:backgroundTint="@color/colorAccent"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="@string/shutdown"
+            android:textColor="#000000"
+            android:textStyle="bold" />
     </TableRow>
+
 </TableLayout>

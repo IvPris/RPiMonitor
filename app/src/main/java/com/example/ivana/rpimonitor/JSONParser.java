@@ -1,21 +1,22 @@
 package com.example.ivana.rpimonitor;
 
 
-        import java.io.BufferedReader;
-        import java.io.IOException;
-        import java.io.InputStream;
-        import java.io.InputStreamReader;
-        import java.io.UnsupportedEncodingException;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
 
-        import org.apache.http.HttpEntity;
-        import org.apache.http.HttpResponse;
-        import org.apache.http.client.ClientProtocolException;
-        import org.apache.http.client.methods.HttpPost;
-        import org.apache.http.impl.client.DefaultHttpClient;
-        import org.json.JSONException;
-        import org.json.JSONObject;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.json.JSONException;
+import org.json.JSONObject;
 
-        import android.util.Log;
+
+import android.util.Log;
 
 public class JSONParser {
 
@@ -28,7 +29,9 @@ public class JSONParser {
 
     }
 
+
     public JSONObject getJSONFromUrl(String url) {
+
 
         // Making HTTP request
         try {
@@ -48,6 +51,7 @@ public class JSONParser {
             e.printStackTrace();
         }
 
+
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(
                     is, "iso-8859-1"), 8);
@@ -60,6 +64,7 @@ public class JSONParser {
             json = sb.toString();
         } catch (Exception e) {
             Log.e("Buffer Error", "Error converting result " + e.toString());
+
         }
 
         // try parse the string to a JSON object
@@ -68,6 +73,7 @@ public class JSONParser {
         } catch (JSONException e) {
             Log.e("JSON Parser", "Error parsing data " + e.toString());
         }
+
 
         // return JSON String
         return jObj;
