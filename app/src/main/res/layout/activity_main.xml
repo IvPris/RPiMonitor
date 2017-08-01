@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
-    android:stretchColumns="*">
+    android:stretchColumns="1">
 
     <TableRow
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="0.5dip"
-            android:layout_span="3"
+            android:layout_span="2"
             android:background="#173f59"
             android:gravity="center"
             android:padding="5dip"
@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="0.5dip"
-            android:layout_span="3"
+            android:layout_span="2"
             android:background="#173f59"
             android:gravity="center"
             android:padding="5dip"
@@ -164,7 +164,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="0.5dip"
-            android:layout_span="3"
+            android:layout_span="2"
             android:background="#173f59"
             android:gravity="center"
             android:padding="5dip"
@@ -275,7 +275,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="0.5dip"
-            android:layout_span="3"
+            android:layout_span="2"
             android:background="#173f59"
             android:gravity="center"
             android:padding="5dip"
@@ -335,29 +335,18 @@
 
         <Button
             android:id="@+id/refresh"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="3dip"
             android:backgroundTint="#92cde2"
             android:gravity="center"
+            android:layout_span="3"
+
             android:padding="5dip"
             android:text="@string/refresh"
             android:textColor="#000000"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/shutdown"
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dip"
-            android:backgroundTint="@color/colorAccent"
-            android:gravity="center"
-            android:padding="5dip"
-            android:text="@string/shutdown"
-            android:textColor="#000000"
-            android:textStyle="bold" />
     </TableRow>
 
 </TableLayout>
