@@ -49,7 +49,7 @@ public class MainActivity extends Activity {
         AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
         alertDialog.setTitle("Pogreška!");
         alertDialog.setCancelable(false);
-        alertDialog.setMessage("Aplikacija nije povezana s uređajem.");
+        alertDialog.setMessage("Aplikacija nije povezana s poslužiteljem.");
         alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "Poništi",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
